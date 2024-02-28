@@ -7,7 +7,8 @@
     <div>
           <a href="{{path('app_login')}}" class="btn btn-success btn-block text-center w-20">Connexion</a>
     </div>
-     {% if app.user == false  %} <a  href="{{path('register') }}" class="btn btn-primary btn-block text-center w-20"> S'inscrire </a>{% else%}
+     {% if app.user == false  %} <a  href="{{path('register') }}" class="btn btn-primary btn-block text-center w-20"> S'inscrire </a>
+            {% else%}
             <div>
                   <a href="{{path('app_logout')}}" class="btn btn-danger btn-block text-center w-20">Deconnexion</a>
             </div>
